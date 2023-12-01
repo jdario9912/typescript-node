@@ -12,7 +12,7 @@ export const addVuelo = (
   nuevoVueloEntrada: NuevoVueloEntrada
 ): VueloEntrada => {
   const nuevoVuelo = {
-    id: Math.max(...vuelosEntradas.map((vuelo) => vuelo.id)) + 1,
+    id: Math.max(...vuelos.map((vuelo) => vuelo.id)) + 1,
     ...nuevoVueloEntrada,
   };
 

@@ -11,8 +11,8 @@ POST {{url}}
 Content-Type: application/json
 
 {
-  "date": "2023-12-10",
+  "date": "2023-12-11",
   "weather": "soleado",
   "visibility": "buena",
-  "comment": "super way"
+  "comment": "super wey"
 }

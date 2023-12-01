@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import * as vuelosServices from "../services/vuelos-service";
+import { paraNuevoVueloEntrada } from "../utils/vuelos-util";
 
 export default class VuelosController {
   static getVuelos(_req: Request, res: Response) {
@@ -15,13 +16,14 @@ export default class VuelosController {
   }
 
   static addVuelo(req: Request, res: Response) {
-    const { date, weather, visibility, comment } = req.body;
-    const nuevoVuelo = vuelosServices.addVuelo(
-      date,
-      weather,
-      visibility,
-      comment
-    );
-    return res.json(nuevoVuelo);
+    try {
+      const nuevoVuelo = paraNuevoVueloEntrada(req.body);
+
+      const nuevoVueloIngresado = vuelosServices.addVuelo(nuevoVuelo);
+      return res.json(nuevoVueloIngresado);
+    } catch (error) {
+      if (error instanceof Error) return res.json({ error: error.message });
+      return;
+    }
   }
 }
