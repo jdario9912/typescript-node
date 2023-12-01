@@ -1,0 +1,26 @@
+export type Weather =
+  | "soleado"
+  | "nublado"
+  | "ventoso"
+  | "lluvioso"
+  | "tormentoso";
+
+export type Visibility = "optimo" | "buena" | "poca" | "nada";
+
+export interface VueloEntrada {
+  id: number;
+  date: string;
+  weather: Weather;
+  visibility: Visibility;
+  comment: string;
+}
+
+// Existen estas dos formas de reutilizar una interfaz: 
+// Tomar los tipo necesarios con 'Pick'
+// Omitir algun tipo con 'Omit'
+export type VueloEntradaNoComment = Pick<
+  VueloEntrada,
+  "id" | "date" | "visibility" | "weather"
+>;
+
+export type VueloEntradaNoComment = Omit<VueloEntrada, "comment">;

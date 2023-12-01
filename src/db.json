@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "date": "2017-03-04",
+    "weather": "lluvioso",
+    "visibility": "poca",
+    "comment": "Un poco brusco el vuelo, pero regrese."
+  },
+  {
+    "id": 1,
+    "date": "2017-03-05",
+    "weather": "nublado",
+    "visibility": "buena",
+    "comment": "Mas tranquilo que ayer."
+  }
+]
