@@ -15,7 +15,7 @@ export interface VueloEntrada {
   comment: string;
 }
 
-// Existen estas dos formas de reutilizar una interfaz: 
+// Existen estas dos formas de reutilizar una interfaz:
 // Tomar los tipo necesarios con 'Pick'
 // Omitir algun tipo con 'Omit'
 export type VueloEntradaNoComment = Pick<
@@ -24,3 +24,5 @@ export type VueloEntradaNoComment = Pick<
 >;
 
 export type VueloEntradaNoComment = Omit<VueloEntrada, "comment">;
+
+export type NuevoVueloEntrada = Omit<VueloEntrada, "id">;

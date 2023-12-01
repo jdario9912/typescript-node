@@ -1,8 +1,12 @@
 import { Router } from "express";
 import VuelosController from "../controllers/vuelos-controller";
 
-const router = Router()
+const router = Router();
 
-router.get('/', VuelosController.getVuelos)
+router.get("/", VuelosController.getVuelos);
 
-export default router
+router.get("/:id", VuelosController.getPorId);
+
+router.post('/', VuelosController.addVuelo)
+
+export default router;

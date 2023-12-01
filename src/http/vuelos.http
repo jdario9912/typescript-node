@@ -1,0 +1,18 @@
+@url = http://localhost:3300/api/vuelos
+
+### obtener todos los vuelos
+GET {{url}}
+
+### obtener un vuelo por id
+GET {{url}}/2
+
+### agregar un vuelo
+POST {{url}}
+Content-Type: application/json
+
+{
+  "date": "2023-12-10",
+  "weather": "soleado",
+  "visibility": "buena",
+  "comment": "super way"
+}
