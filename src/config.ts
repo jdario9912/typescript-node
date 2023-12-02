@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config();
 
-const port = process.env.PORT
+const port = process.env.PORT || 3100;
 
-export {port}
+export { port };

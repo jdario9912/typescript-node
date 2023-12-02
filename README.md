@@ -1,6 +1,42 @@
 ## Descripcion
 
-Aplicacion desarrollada en Node con Typescript, utilizando Express como framework.
+Aplicacion desarrollada en Node con Typescript, utilizando Express.
+
+El objeto es un piloto de avion que quiere registrar datos de los vuelos realizados.
+
+Debe poder obtener todos los registros o uno solo.
+
+Requiere:
+
+* date (string)
+* weather (string): "soleado" | "nublado" | "ventoso" | "lluvioso" | "tormentoso"
+* visibility (string): "optima" | "buena" | "mala" | "poca"
+* comment (string)
+
+Ejemplo:
+
+```json
+{
+  "date": "2024-10-04",
+  "weather": "soleado",
+  "visibility": "optima",
+  "comment": "un vuelo genial"
+}
+
+```
+
+### Endpoints
+
+#### POST
+
+http://localhost:3100/api/vuelos
+
+
+#### GET
+
+http://localhost:3100/api/vuelos
+
+http://localhost:3100/api/vuelos/:id
 
 ## Objetivo
 
@@ -9,6 +45,14 @@ Aplicacion desarrollada en Node con Typescript, utilizando Express como framewor
 2. Integrar otras tecnologìas como eslint, MongoDb, Docker y Jest.
 
 3. Implementar pruebas unitarias.
+
+## Por completar
+
+* [x] Tipado de datos.
+* [x] Activar eslint.
+* [x] Incorporar una base de datos desde Docker.
+* [ ] Conectar e implementar MongoDb.
+* [ ] Automatizar test con Jest.
 
 ## Como usarla
 
@@ -30,3 +74,8 @@ Aplicacion desarrollada en Node con Typescript, utilizando Express como framewor
 
 4. Ejecutar `npm` para ver los comandos disponibles.
 
+### Extra
+
+Por defecto la aplicaciòn se ejecuta en el puerto 3100, pero se puede agregar un archivo ".env" en la raiz del proyecto para asignar otro.
+
+`PORT=algun puerto`
