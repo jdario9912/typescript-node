@@ -59,11 +59,11 @@ http://localhost:3100/api/vuelos/:id
 
 ### Requerimientos previos
 
-1. Tener Node instalado. Puedes ver como instalarlo [aqui](url "instalar Node").
+1. Tener Node instalado. Puedes ver como instalarlo [aqui](https://gist.github.com/jdario9912/af34af94964c70b85cbfb1f84210915b "instalar Node").
 
 2. Tener Git instalado. Puedes ver como instalarlo [aqui](url "instalar Git").
 
-3. Tener Docker instalado. Puedes ver como instalarlo [aqui](url "instalar Docker").
+3. Tener Docker instalado. Puedes ver como instalarlo [aqui](https://gist.github.com/jdario9912/ff10512f7925a29023cd900f5ca09a11 "instalar Docker").
 
 ### Instalacion
 
