@@ -67,13 +67,11 @@ http://localhost:3100/api/vuelos/:id
 
 ### Instalacion
 
-1. Clonar el repositorio con [este enlace](url "clonar repositorio").
+1. Clonar el repositorio.
 
-2. Ingresar a la carpeta del depositorio.
+2. Ejecutar `npm i` para instalar dependencias.
 
-3. Ejecutar `npm i` para instalar dependencias.
-
-4. Ejecutar `npm` para ver los comandos disponibles.
+3. Ejecutar `npm` para ver los comandos disponibles.
 
 ### Extra
 
