@@ -48,7 +48,7 @@ http://localhost:3100/api/vuelos/:id
 
 ## Por completar
 
-* [ ] Crear repositorio en GitHub.
+* [x] Crear repositorio en GitHub.
 * [x] Tipado de datos.
 * [x] Activar eslint.
 * [x] Incorporar una base de datos desde Docker.
